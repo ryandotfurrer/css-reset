@@ -1,5 +1,5 @@
 # css-reset
-My CSS Reset
+My CSS Reset that is used on my [Portfolio site](https://theryanfurrer.dev/) and for future projects of mine.
 
 ```css
 /*
