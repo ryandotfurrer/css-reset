@@ -28,6 +28,7 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -38,7 +39,7 @@ button, input, label {
 
 /* Balance text wrapping on headings */
 h1, h2,
-h3, h4 {
+h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
@@ -54,10 +55,9 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
+img, picture, video, canvas, svg {
   display: block;
+  max-width: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -87,7 +87,8 @@ textarea:not([rows]) {
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    opacity: 1;
     scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
